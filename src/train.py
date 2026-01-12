@@ -10,4 +10,4 @@ model.fit(X_scaled)
 joblib.dump(model, "../models/kmeans_model.pkl")
 joblib.dump(scaler, "../models/scaler.pkl")
 
-print("Model trained")
+print("Model trained and saved successfully")

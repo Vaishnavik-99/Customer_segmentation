@@ -16,4 +16,5 @@ def predict(age: int, income: float, score: float):
     data = np.array([[age, income, score]])
     scaled = scaler.transform(data)
     cluster = int(model.predict(scaled)[0])
+
     return {"cluster": cluster}
